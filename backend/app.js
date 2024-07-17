@@ -10,11 +10,8 @@ const app = express();
 
 app.use(bodyParser.json());
 
-const corsOptions = {
-  origin: "http://13.60.46.80:5001",
-  optionsSuccessStatus: 200,
-};
-app.use(cors(corsOptions));
+
+app.use(cors());
 
 mongoose
   .connect(config.MONGODB_URI, {
