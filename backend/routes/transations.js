@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const ZeroCard = require("../models/ZenoCard.js");
-const transaction = require("../models/transaction.js");
+const transaction = require("../models/Transaction.js");
 
 //Getting Charges
 const getCharges = (type, direction, lastDirection, lastUpdatedAt) => {
@@ -112,6 +112,7 @@ router.get("/summary/passengers", async (req, res) => {
     res.send(transactions);
   } catch (error) {
     res.status(400).send(error);
+    console.error("Error in passanger api", error);
   }
 });
 
@@ -122,6 +123,7 @@ router.get("/summary/tickets", async (req, res) => {
     res.send(transactions);
   } catch (error) {
     res.status(400).send(error);
+    console.error("Error in ticket api", error);
   }
 });
 

@@ -12,6 +12,7 @@ const CollectionSummary = () => {
         setSummary(data);
       } catch (error) {
         alert("Error fetching collection summary");
+        console.error("Error fetching collection summary", error);
       }
     };
 

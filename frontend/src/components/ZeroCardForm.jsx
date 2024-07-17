@@ -20,6 +20,7 @@ const ZeroCardForm = () => {
         alert("Card already exists with this number");
       } else {
         alert("Error adding ZeroCard");
+        console.error("Error adding ZeroCard", error);
       }
     }
   };

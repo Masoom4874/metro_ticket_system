@@ -12,6 +12,7 @@ const PassengerSummary = () => {
         setSummary(data);
       } catch (error) {
         alert("Error fetching passenger summary");
+        error("Error fetching passenger summary", error);
       }
     };
 

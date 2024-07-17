@@ -11,7 +11,7 @@ const app = express();
 app.use(bodyParser.json());
 
 const corsOptions = {
-  origin: "http://localhost:5173",
+  origin: "http://13.60.46.80:5001",
   optionsSuccessStatus: 200,
 };
 app.use(cors(corsOptions));

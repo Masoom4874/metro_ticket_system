@@ -14,6 +14,7 @@ const TicketSummary = () => {
         setSummary(data);
       } catch (error) {
         alert("Error fetching ticket summary");
+        console.error("Error fetching ticket summary", error);
       }
     };
 

@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://localhost:5000/api",
+  baseURL: "http://l13.60.46.80:5000/api",
 });
 
 export const addZeroCard = (data) => api.post("/zerocard/add", data);

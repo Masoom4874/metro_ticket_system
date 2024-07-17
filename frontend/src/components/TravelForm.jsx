@@ -18,6 +18,7 @@ const TravelForm = () => {
         alert("Insufficient balance");
       } else {
         alert("Error in registering travel");
+        console.error("Error in registering travel", error);
       }
     }
   };
